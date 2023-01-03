@@ -6,7 +6,7 @@ brain-gcd - Determine the greatest common divisor.
 brain-progression - Determine a missing number in a progression.
 brain-prime - Determine if a number is prime.
 
-###Run games
+### Run games
 make brain-even
 make brain-calc
 make brain-gcd
