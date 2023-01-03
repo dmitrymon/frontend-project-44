@@ -6,13 +6,12 @@ import startGame from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
-const generateRandomOperator = () => Math.floor(Math.random() * 3);
-
 const startRound = () => {
   const randomNumber1 = generateRandomNumber();
   const randomNumber2 = generateRandomNumber();
   const operators = ['+', '-', '*'];
-  const operator = operators[generateRandomOperator()];
+  const operatorsCount = 3;
+  const operator = operators[generateRandomNumber(operatorsCount)];
   let userAnswer;
   let correctAnswer;
   switch (operator) {
