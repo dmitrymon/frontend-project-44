@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 
-import { generateRandomNumber } from '../index.js';
+import { generateRandomNumber, startGame } from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
-const greatestCommonDivider = (number1, number2) => {
+const greatestCommonDivisor = (number1, number2) => {
   let max = 1;
   if (number1 === number2) {
     max = number1;
@@ -29,8 +29,10 @@ const startRound = () => {
   const randomNumber2 = generateRandomNumber();
   const userAnswer = readlineSync.question(`Question: ${randomNumber1} ${randomNumber2}
 Your answer: `);
-  const correctAnswer = greatestCommonDivider(randomNumber1, randomNumber2);
+  const correctAnswer = greatestCommonDivisor(randomNumber1, randomNumber2);
   return [userAnswer, correctAnswer];
 };
 
-export { rules, startRound };
+const runGame = () => startGame(rules, startRound);
+
+export default runGame;

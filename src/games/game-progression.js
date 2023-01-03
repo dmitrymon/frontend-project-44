@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import { generateRandomNumber } from '../index.js';
+import { generateRandomNumber, startGame } from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 
@@ -40,4 +40,6 @@ Your answer: `);
   return [userAnswer, correctAnswer];
 };
 
-export { rules, startRound };
+const runGame = () => startGame(rules, startRound);
+
+export default runGame;

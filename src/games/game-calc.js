@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import { generateRandomNumber } from '../index.js';
+import { generateRandomNumber, startGame } from '../index.js';
 
 const operators = ['+', '-', '*'];
 
@@ -36,4 +36,6 @@ Your answer: `);
   return [userAnswer, correctAnswer];
 };
 
-export { rules, startRound };
+const runGame = () => startGame(rules, startRound);
+
+export default runGame;
