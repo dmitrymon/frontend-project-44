@@ -7,7 +7,8 @@ const startGame = (rules, startRound) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rules);
-  for (let i = 0; i < 3; i += 1) {
+  const roundsCount = 3;
+  for (let i = 1; i <= roundsCount; i += 1) {
     const [userAnswer, correctAnswer] = startRound();
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
