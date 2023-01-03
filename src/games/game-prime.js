@@ -17,14 +17,14 @@ const isPrime = (number) => {
     }
   }
   dividers.push(number);
-  return (dividers[1] === number ? 'yes' : 'no');
+  return dividers[1] === number;
 };
 
 const startRound = () => {
   const randomNumber = generateRandomNumber();
   const userAnswer = readlineSync.question(`Question: ${randomNumber}
 Your answer: `);
-  const correctAnswer = isPrime(randomNumber);
+  const correctAnswer = (isPrime(randomNumber) ? 'yes' : 'no');
   return [userAnswer, correctAnswer];
 };
 
