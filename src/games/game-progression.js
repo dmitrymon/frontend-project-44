@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 
-import { generateRandomNumber, startGame } from '../index.js';
+import generateRandomNumber from '../random-number-generator.js';
+
+import startGame from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 

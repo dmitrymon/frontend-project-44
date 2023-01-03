@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const generateRandomNumber = () => Math.round(Math.random() * 100);
-
 const startGame = (rules, startRound) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
@@ -20,4 +18,4 @@ const startGame = (rules, startRound) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export { generateRandomNumber, startGame };
+export default startGame;

@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 
-import { generateRandomNumber, startGame } from '../index.js';
+import generateRandomNumber from '../random-number-generator.js';
+
+import startGame from '../index.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
