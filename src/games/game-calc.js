@@ -10,24 +10,19 @@ const startRound = () => {
   const randomNumber1 = generateRandomNumber();
   const randomNumber2 = generateRandomNumber();
   const operators = ['+', '-', '*'];
-  const operatorsCount = 3;
-  const operator = operators[generateRandomNumber(operatorsCount)];
-  let userAnswer;
+  const lastOperatorIndex = 2;
+  const operator = operators[generateRandomNumber(lastOperatorIndex)];
+  const userAnswer = readlineSync.question(`Question: ${randomNumber1} ${operator} ${randomNumber2}
+Your answer: `);
   let correctAnswer;
   switch (operator) {
     case '+':
-      userAnswer = readlineSync.question(`Question: ${randomNumber1} + ${randomNumber2}
-Your answer: `);
       correctAnswer = (randomNumber1 + randomNumber2).toString();
       break;
     case '-':
-      userAnswer = readlineSync.question(`Question: ${randomNumber1} - ${randomNumber2}
-Your answer: `);
       correctAnswer = (randomNumber1 - randomNumber2).toString();
       break;
     case '*':
-      userAnswer = readlineSync.question(`Question: ${randomNumber1} * ${randomNumber2}
-Your answer: `);
       correctAnswer = (randomNumber1 * randomNumber2).toString();
       break;
     default:
