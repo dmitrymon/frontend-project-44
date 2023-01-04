@@ -1,17 +1,17 @@
 ### Description
 It is a collection of 5 console mathematical games for brain training:
-brain-even - Determine if a number is even.
-brain-calc - Calculate arithmetical expressions.
-brain-gcd - Determine the greatest common divisor.
-brain-progression - Determine a missing number in a progression.
-brain-prime - Determine if a number is prime.
+- brain-even - Determine if a number is even.
+- brain-calc - Calculate arithmetical expressions.
+- brain-gcd - Determine the greatest common divisor.
+- brain-progression - Determine a missing number in a progression.
+- brain-prime - Determine if a number is prime.
 
 ### Run games
-make brain-even
-make brain-calc
-make brain-gcd
-make brain-progression
-make brain-prime
+- make brain-even
+- make brain-calc
+- make brain-gcd
+- make brain-progression
+- make brain-prime
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/dmitrymon/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dmitrymon/frontend-project-44/actions)
