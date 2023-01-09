@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import generateRandomNumber from '../random-number-generator.js';
+import generateRandomNumber from '../randomNumberGenerator.js';
 
 import startGame from '../index.js';
 
