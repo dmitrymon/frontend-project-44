@@ -27,8 +27,8 @@ const greatestCommonDivisor = (number1, number2) => {
 };
 
 const startRound = () => {
-  const randomNumber1 = generateRandomNumber();
-  const randomNumber2 = generateRandomNumber();
+  const randomNumber1 = generateRandomNumber(100, 1);
+  const randomNumber2 = generateRandomNumber(100, 1);
   const userAnswer = readlineSync.question(`Question: ${randomNumber1} ${randomNumber2}
 Your answer: `);
   const correctAnswer = greatestCommonDivisor(randomNumber1, randomNumber2);
