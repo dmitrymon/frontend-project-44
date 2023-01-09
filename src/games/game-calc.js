@@ -17,13 +17,13 @@ Your answer: `);
   let correctAnswer;
   switch (operator) {
     case '+':
-      correctAnswer = (randomNumber1 + randomNumber2).toString();
+      correctAnswer = `${randomNumber1 + randomNumber2}`;
       break;
     case '-':
-      correctAnswer = (randomNumber1 - randomNumber2).toString();
+      correctAnswer = `${randomNumber1 - randomNumber2}`;
       break;
     case '*':
-      correctAnswer = (randomNumber1 * randomNumber2).toString();
+      correctAnswer = `${randomNumber1 * randomNumber2}`;
       break;
     default:
   }
