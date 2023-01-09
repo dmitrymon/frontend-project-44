@@ -6,12 +6,23 @@ It is a collection of 5 console mathematical games for brain training:
 - brain-progression - Determine a missing number in a progression.
 - brain-prime - Determine if a number is prime.
 
-### Run games
+### Setup
+1. sudo apt install make
+2. make install
+3. Run games:
 - make brain-even
 - make brain-calc
 - make brain-gcd
 - make brain-progression
 - make brain-prime
+
+### Dependencies
+1. readline-sync
+2. devDependencies:
+- eslint
+- eslint-config-airbnb-base
+- eslint-plugin-import
+- eslint-plugin-jest
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/dmitrymon/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dmitrymon/frontend-project-44/actions)
