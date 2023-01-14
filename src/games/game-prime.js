@@ -1,5 +1,3 @@
-import readlineSync from 'readline-sync';
-
 import generateRandomNumber from '../randomNumberGenerator.js';
 
 import startGame from '../index.js';
@@ -20,10 +18,9 @@ const isPrime = (number) => {
 
 const startRound = () => {
   const randomNumber = generateRandomNumber();
-  const userAnswer = readlineSync.question(`Question: ${randomNumber}
-Your answer: `);
+  const question = `Question: ${randomNumber}`;
   const correctAnswer = (isPrime(randomNumber) ? 'yes' : 'no');
-  return [userAnswer, correctAnswer];
+  return [question, correctAnswer];
 };
 
 const runGame = () => startGame(rules, startRound);

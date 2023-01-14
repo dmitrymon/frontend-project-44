@@ -1,5 +1,3 @@
-import readlineSync from 'readline-sync';
-
 import generateRandomNumber from '../randomNumberGenerator.js';
 
 import startGame from '../index.js';
@@ -28,9 +26,8 @@ const startRound = () => {
   const gapIndex = generateRandomNumber(gapIndexLimit);
   const correctAnswer = progression[gapIndex].toString();
   progression[gapIndex] = '..';
-  const userAnswer = readlineSync.question(`Question: ${progression.join(' ')}
-Your answer: `);
-  return [userAnswer, correctAnswer];
+  const question = `Question: ${progression.join(' ')}`;
+  return [question, correctAnswer];
 };
 
 const runGame = () => startGame(rules, startRound);

@@ -1,5 +1,3 @@
-import readlineSync from 'readline-sync';
-
 import generateRandomNumber from '../randomNumberGenerator.js';
 
 import startGame from '../index.js';
@@ -31,10 +29,9 @@ const startRound = () => {
   const minNum = 1;
   const randomNumber1 = generateRandomNumber(maxNum, minNum);
   const randomNumber2 = generateRandomNumber(maxNum, minNum);
-  const userAnswer = readlineSync.question(`Question: ${randomNumber1} ${randomNumber2}
-Your answer: `);
+  const question = `Question: ${randomNumber1} ${randomNumber2}`;
   const correctAnswer = greatestCommonDivisor(randomNumber1, randomNumber2);
-  return [userAnswer, correctAnswer];
+  return [question, correctAnswer];
 };
 
 const runGame = () => startGame(rules, startRound);
