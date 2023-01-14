@@ -4,24 +4,17 @@ import startGame from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
-const greatestCommonDivisor = (number1, number2) => {
-  let max = 1;
-  if (number1 === number2) {
-    max = number1;
-  } else if (number1 < number2) {
-    for (let j = 1; j <= number1; j += 1) {
-      if (number1 % j === 0 && number2 % j === 0) {
-        max = j;
-      }
-    }
-  } else {
-    for (let j = 1; j <= number2; j += 1) {
-      if (number1 % j === 0 && number2 % j === 0) {
-        max = j;
-      }
+const getGreatestCommonDivisor = (number1, number2) => {
+  let a = number1;
+  let b = number2;
+  while (a !== b) {
+    if (a > b) {
+      a -= b;
+    } else {
+      b -= a;
     }
   }
-  return max.toString();
+  return a.toString();
 };
 
 const startRound = () => {
@@ -30,7 +23,7 @@ const startRound = () => {
   const randomNumber1 = generateRandomNumber(maxNum, minNum);
   const randomNumber2 = generateRandomNumber(maxNum, minNum);
   const question = `Question: ${randomNumber1} ${randomNumber2}`;
-  const correctAnswer = greatestCommonDivisor(randomNumber1, randomNumber2);
+  const correctAnswer = getGreatestCommonDivisor(randomNumber1, randomNumber2);
   return [question, correctAnswer];
 };
 
