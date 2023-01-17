@@ -2,7 +2,7 @@ import generateRandomNumber from '../randomNumberGenerator.js';
 
 import startGame from '../index.js';
 
-const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => number % 2 === 0;
 
@@ -13,6 +13,6 @@ const startRound = () => {
   return [question, correctAnswer];
 };
 
-const runGame = () => startGame(rules, startRound);
+const runGame = () => startGame(rule, startRound);
 
 export default runGame;

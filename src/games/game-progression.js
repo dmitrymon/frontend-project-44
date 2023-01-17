@@ -2,7 +2,7 @@ import generateRandomNumber from '../randomNumberGenerator.js';
 
 import startGame from '../index.js';
 
-const rules = 'What number is missing in the progression?';
+const rule = 'What number is missing in the progression?';
 
 const generateProgression = (start, step, length) => {
   const progression = [start];
@@ -36,6 +36,6 @@ const startRound = () => {
   return [question, correctAnswer];
 };
 
-const runGame = () => startGame(rules, startRound);
+const runGame = () => startGame(rule, startRound);
 
 export default runGame;

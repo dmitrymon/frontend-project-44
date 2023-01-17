@@ -2,7 +2,7 @@ import generateRandomNumber from '../randomNumberGenerator.js';
 
 import startGame from '../index.js';
 
-const rules = 'What is the result of the expression?';
+const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
@@ -33,6 +33,6 @@ const startRound = () => {
   return [question, correctAnswer];
 };
 
-const runGame = () => startGame(rules, startRound);
+const runGame = () => startGame(rule, startRound);
 
 export default runGame;
