@@ -29,17 +29,17 @@ It is a collection of 5 console mathematical games for brain training:
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5a814c2f4c2e8857a77d/maintainability)](https://codeclimate.com/github/dmitrymon/frontend-project-44/maintainability)
 
-### brain-even asciinema:
-https://asciinema.org/a/551271
+### brain-even
+[![asciicast](https://asciinema.org/a/551271.svg)](https://asciinema.org/a/551271)
 
-### brain-calc asciinema:
-https://asciinema.org/a/551272
+### brain-calc
+[![asciicast](https://asciinema.org/a/551272.svg)](https://asciinema.org/a/551272)
 
-### brain-gcd asciinema:
-https://asciinema.org/a/551273
+### brain-gcd
+[![asciicast](https://asciinema.org/a/551273.svg)](https://asciinema.org/a/551273)
 
-### brain-progression asciinema:
-https://asciinema.org/a/551274
+### brain-progression
+[![asciicast](https://asciinema.org/a/551274.svg)](https://asciinema.org/a/551274)
 
-### brain-prime asciinema:
-https://asciinema.org/a/551275
+### brain-prime
+[![asciicast](https://asciinema.org/a/551275.svg)](https://asciinema.org/a/551275)
